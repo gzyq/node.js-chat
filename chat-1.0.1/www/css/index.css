@@ -1,0 +1,199 @@
+html {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none
+}
+body,h1,h2,h3,h4,h5,h6,hr,p,ul,ol,li,button,input,textarea{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+ul,ol {
+    list-style: none
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%
+}
+button,
+input,
+textarea{
+    font-family: inherit;
+    font-size: 100%;
+    border: none
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+input[type="text"]:focus {
+    outline: none
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button
+}
+input,textarea {
+    -webkit-appearance: none
+}
+a {
+    text-decoration: none;
+}
+a:hover,a:active{
+    color: #0F1922;
+}
+iframe {
+    display: block;
+}
+video {
+    display: block;
+    width: 100%;
+    background: #000;
+}
+canvas {
+    vertical-align: bottom;
+}
+body {
+    font-family: "Microsoft YaHei", "YaHei", "微软雅黑", "Helvetic Neue", Helvetica, Arial, sans-serif;
+    /* overflow: hidden; */
+    font-size: 0.14srem;
+    color:#49c9ff;
+    background: #0f1922; 
+}
+/*聊天*/
+.chatBtn{
+    position: absolute;
+    bottom: 0.65rem;
+    left: 0.14rem;
+    width: 0.45rem;
+    height: 0.45rem;
+    background: url(../images/lt_icon.png) no-repeat;
+    background-size: 100%;
+}
+.chatTab{
+    box-sizing:border-box;
+    padding: 0.1rem;
+    /*margin-bottom: 1rem;*/
+    font-size: 0.15rem;
+    background:#323232; 
+}
+.chatTab .chatList{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+.chatTab ul li{
+    font-family: PingFang-Sc-Regular;
+    line-height: 0.22rem;
+    color: #ff7815;
+}
+/*city0其他网友，city1自己发*/
+.chatTab ul li .city0{
+    color: #15aaef;
+}
+.chatTab ul li .city1{
+    color: #52c729;
+}
+.chatTab ul li .comments{
+    color: #fff;
+    vertical-align: bottom;
+}
+.chatTab ul li .comments>img{
+    width: 0.24rem;
+    vertical-align: bottom;
+}
+/*发送聊天*/
+.chatOp{
+    position: fixed;
+    z-index: 10;
+    bottom: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: #101619;
+}
+.chatOp .chatEmotion{
+   position: absolute;
+    left: 0;
+    top: 0.115rem;
+}
+.chatOp .chatEmotion>img {
+    display: block;
+    width: 0.25rem;
+    margin-left: 0.15rem;
+}
+.chatOp .chatWord {
+   position: absolute;
+    top: 0.08rem;
+    left: 0.515rem;
+    right: 0.765rem;
+    height: 0.35rem;
+    border-radius: 4px;
+}
+.chatOp .chatWord  textarea {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    resize: none;
+    vertical-align: top;
+    background: #3f3f3f;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color:#FFF;
+    font-size: 0.15rem;
+    padding: 0.09rem;
+}
+.chatOp button {
+    position: absolute;
+    top: 0.08rem;
+    right: 0.14rem;
+    width: 0.5rem;
+    height: 0.35rem;
+    background: #3f3f3f;
+    border-radius: 4px;
+    text-align: center;
+    outline: none;
+    color: #888688;
+    font-size: 0.15rem;
+    font-family: "Microsoft YaHei", "YaHei", "微软雅黑", "SimHei", "黑体";
+} 
+ /*表情*/
+#facebox {
+    background: #212223;
+}
+#facebox .qqFace {
+    float: left;
+    text-align: left;
+    background: #212223;
+    font-size: 0;
+}
+.qqFace-box{
+    background: #212223;
+}
+#facebox li {
+    display: inline-block;
+    padding: 10px 0;
+    width: 14%;
+    text-align: center;
+}
+#facebox li>img{
+    width: 0.24rem;
+}
+.text-center{
+    height: 12px;
+    width: 100%;
+    background:#212223;
+ }
+.text-center a{
+    display: inline-block;
+    width: 0.06rem;
+    height: 0.06rem;
+    vertical-align: top;
+    margin-right: 0.05rem;
+    border-radius: 100%;
+    background: #cfcfcf;
+}
+.text-center a.active {
+    background: #a1a1a1;
+} 
